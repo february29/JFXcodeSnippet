@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jfgetdatafromnet</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//MARK: 网络请求
+
+- (void)getDataFromNetWithHUD:(BOOL)showHUD isRefresh:(BOOL)isRefresh {
+    
+    NSString* requestURI=[[NSString alloc] initWithFormat:@"%@/%@",BASEURL,@"&lt;#url#&gt;"];
+    NSDictionary *parameters = @{
+                                 @"&lt;#name#&gt;":@"",
+                                 
+                                 };
+    
+    [[BNetWorkingManager sharedInstance]GET:requestURI paraments:parameters completeBlock:^(id  _Nullable responseObject, NSError * _Nullable error) {
+        if (responseObject) {
+            
+        }else{
+            
+        }
+    }];
+       
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7AE73753-7CD6-4FC3-868B-43D7ACD9DD2D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>网络请求</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>getDataFromNet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

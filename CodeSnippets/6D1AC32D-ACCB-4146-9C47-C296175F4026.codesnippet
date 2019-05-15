@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jflable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> UILabel *&lt;#view#&gt; = [UILabel new];
+        &lt;#view#&gt;.font = FONTLARGE;
+        &lt;#view#&gt;.textColor = TEXTGRAYCOLOR;
+        [&lt;#view#&gt; addSubview:&lt;#view#&gt;];
+        [&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(&lt;#view#&gt;);
+            make.left.equalTo(&lt;#view#&gt;);
+            make.right.equalTo(&lt;#view#&gt;);
+            make.height.mas_equalTo(25);
+            
+        }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6D1AC32D-ACCB-4146-9C47-C296175F4026</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>生成lable</string>
+	<key>IDECodeSnippetTitle</key>
+	<string> Lable</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

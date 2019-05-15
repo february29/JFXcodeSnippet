@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jfidreplace</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (NSDictionary *)replacedKeyFromPropertyName{
+    return @{
+             @"idField" : @"id",
+             
+             };
+}
+
++ (NSDictionary *)objectClassInArray{
+    return @{
+             @"son" : @"SubModuleModel",
+             };
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C30A446F-5FDD-4D22-9629-88FDEE3DB010</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mj implement 替换</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My mj id repalce</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
