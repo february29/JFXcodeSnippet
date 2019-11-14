@@ -110,15 +110,9 @@
         page = 1;
     }
     
-    //    type    10011
-    //    pageNumber    1
-    //    zrks_id
-    //    zrr_name
-    //    wjlx_id
-    //    wj_name
     
     
-    NSString* requestURI=[[NSString alloc] initWithFormat:@"%@/%@",[SJTNetWorkingChangeHelper sharedInstance].BaseURL_1,@"hoBook/list"];
+    NSString* requestURI=[[NSString alloc] initWithFormat:@"%@/%@",BASEURL,@"hoBook/list"];
     NSMutableDictionary *parameters = [@{
                                          
                                          @"token":[UserInfor token],

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jfbtn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>StringOrComment</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#name#&gt; = [UIButton new];
+&lt;#name#&gt;.titleLabel.font = GLOBLFONT;
+[&lt;#name#&gt; setTitleColor:TEXTGRAYCOLOR forState:UIControlStateNormal];
+[&lt;#name#&gt; setTitle:@"" forState:UIControlStateNormal];
+
+[&lt;#name#&gt; bk_addEventHandler:^(id sender) {
+        &lt;#code#&gt;
+}forControlEvents:UIControlEventTouchUpInside];
+[self addSubview:&lt;#name#&gt;];
+[&lt;#name#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self);
+        make.centerX.equalTo(self);
+        make.left.right.equalTo(self);
+        make.height.mas_equalTo(50);
+           
+        }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>35B520EE-068D-4847-97CC-994A417C66DD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My button Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

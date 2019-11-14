@@ -21,36 +21,21 @@
         [self.view addSubview:_scrollerView];
         
         _scollerContentView = [UIView new];
-        _scollerContentView.backgroundColor = ALPHABACKGREEN;
-        _scollerContentView.userInteractionEnabled = YES;
+        _scollerContentView.backgroundColor = GLOBLEBACKGRAY;
         [_scrollerView addSubview:_scollerContentView];
-        
-        //        if (@available(iOS 11.0, *)) {
-        //            _mTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        //        } else {
-        //            self.automaticallyAdjustsScrollViewInsets = NO;
-        //        }
-        
         [_scrollerView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view);
             make.left.equalTo(self.view);
             make.right.equalTo(self.view);
-            
-            if (BIsIPhoneX){
-                make.bottom.mas_equalTo(self.view).offset(-23);
-            }else{
-                make.bottom.mas_equalTo(self.view).offset(-10);
-            }
+            make.bottom.mas_equalTo(self.view);
             
         }];
         
         [_scollerContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.top.equalTo(self.view).offset(10);
-            make.bottom.right.equalTo(self.view).offset(-10);
-            
-            
-        }];
+            make.edges.top.equalTo(self.scrollerView);
+            make.width.equalTo(self.scrollerView);
         
+        }];
         
         
     }

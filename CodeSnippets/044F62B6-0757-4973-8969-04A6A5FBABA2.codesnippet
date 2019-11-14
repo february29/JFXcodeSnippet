@@ -3,24 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jfassign</string>
+	<string>jfimage</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceVariables</string>
 		<string>ClassInterfaceMethods</string>
+		<string>StringOrComment</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,assign) &lt;#Class#&gt; &lt;#property#&gt;;</string>
+	<string>        imageView = [UIImageView new];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+[&lt;#superview#&gt; addSubview:imageView];
+        [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(myContentView);
+            make.left.mas_equalTo(10);
+            make.width.height.mas_equalTo(KSCALE(50));
+
+            
+        }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>856E0795-4824-482E-BC6F-59B77C7ECEC7</string>
+	<string>044F62B6-0757-4973-8969-04A6A5FBABA2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>assign 变量</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string> assign</string>
+	<string>My image Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

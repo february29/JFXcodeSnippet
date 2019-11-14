@@ -3,24 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jfassign</string>
+	<string>jfline</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceVariables</string>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,assign) &lt;#Class#&gt; &lt;#property#&gt;;</string>
+	<string>        _lineView = [UIView new];
+        _lineView.backgroundColor = GLOBLEBLINEGRAY;
+        [_inputView addSubview:_lineView];
+        [_lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+           make.top.equalTo(_tsLable.mas_bottom);
+           make.left.equalTo(self);
+           make.right.equalTo(self);
+           make.height.mas_equalTo(0.85);
+           
+        }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>856E0795-4824-482E-BC6F-59B77C7ECEC7</string>
+	<string>E5A1C75A-68A0-4284-821B-0A022EB5FF94</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>assign 变量</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string> assign</string>
+	<string>My line Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

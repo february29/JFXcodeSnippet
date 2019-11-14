@@ -3,19 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mys</string>
+	<string>jfdelay</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,strong)</string>
+	<string> __block UIViewController *weakSelf = self;
+    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC));
+
+    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+        [weakSelf delayMethod];
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4641EF79-E823-42B6-978B-CA8BC77D6343</string>
+	<string>696B484F-3ADC-49B5-87CC-3FE2CE65B4B0</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>gcd</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My property</string>
+	<string>My delay Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
